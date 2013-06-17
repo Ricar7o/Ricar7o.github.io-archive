@@ -1,0 +1,375 @@
+@media (max-width: 480px) {
+	body {
+		width: 120px;
+	}
+
+	.navbar {
+		width: 100px;
+		padding: 0px 10px 0px 10px;
+	}
+}*/
+
+/*======================= General styling of the website ======================*/
+* {
+	font-family: "Noto Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/*background-color: lightgray;*/
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #EFF4F9 100%);
+	margin: 0;
+	padding: 0;
+/*	position: absolute;
+	height: 100%;*/
+}
+
+/*============================== Header styles ===============================*/
+
+.navbar {
+	width: 100%;
+	height: 120px;
+	/* --- How many instructions do I have to put for all browsers to understand it the same way? ---*/
+	background-image: linear-gradient(to bottom, #171717 0%, #00283B 100%); /*"to bottom" implies that the value with 0% is at the opposite side of "bottom", meaning at the top*/
+	background: -webkit-linear-gradient(bottom,#00283B 0%,#171717 100%);   
+	background: -moz-linear-gradient(bottom,#00283B 0%,#171717 100%); /*"bottom" only (without "to ~" means that 0% is at that location, meaning at the bottom)*/
+
+	position: absolute;
+	margin: auto;
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 0px 1px 3px #555, 0px 3px 3px #aaa;
+}
+
+.navbar-inner {
+	width: 65%;
+	position: relative;
+	height: 120px;
+	margin: auto;
+	padding: 0px;
+	border: 0;
+	/*background-image: linear-gradient(to bottom, #171717 0%, #00283B 100%);*/
+}
+
+img.selfie {
+	float: left;
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+div.brand {
+	width: 12%;
+	float: left;
+	height: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	margin-left: 20px;
+}
+
+.brand > a {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 1.7em;
+	font-weight: bold;
+	font-family: "Noto Sans", sans-serif;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	line-height: 120px;
+	height: 100%;
+	color: lightgray;
+	text-shadow: -3px 3px 5px black;
+}
+
+.brand a > sub {
+	font-size: 0.3em;
+	font-weight: normal;
+	margin-left: 2px;
+	text-shadow: -3px 3px 5px black;
+}
+
+.brand span.se7en {
+	font-size: .9em;
+	text-shadow: -3px 3px 5px black;
+	margin: 0px -1px 0px 1px;
+}
+
+.brand > a:hover {
+	color: white;
+}
+
+div.glow {
+	width: 20%;
+	/*background-image: radial-gradient(circle farthest-corner at center bottom, #006EA1 0%, #002638 30%, rgba(0,38,56,0.0) 100%);*/ /*Clear gradient from the bottom with transparency*/
+	background-image: -webkit-radial-gradient(center top, circle farthest-corner, #006EA1 0%, #121B1F 30%, rgba(0,38,56,0.0) 100%);
+	background-image: -moz-radial-gradient(center top, circle farthest-corner, #006EA1 0%, #121B1F 30%, rgba(0,38,56,0.0) 100%);
+	background-image: radial-gradient(circle farthest-corner at center top, #006EA1 0%, #121B1F 30%, rgba(0,38,56,0.0) 100%);
+	height: 30px;
+	/*margin-top: -30px;*/ /*Set this to -30px if I want to put it on the bottom of the menu*/
+	margin-left: 20%;
+	position: absolute;
+}
+
+ul.nav {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	/*width: 450px; */ /*Include this for when the browser's width is <700 px*/
+}
+
+.navbar .nav>li {
+	/*line-height: 120px;*/
+	width: 20%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.navbar .nav>.active>a {
+	/*background-image: linear-gradient(to bottom, #171717 0%, #0089C9 100%);*/
+	height: 100%;
+	/*background-image: linear-gradient(to bottom, #171717 0%, #002638 90%, #005075 100%);*/
+	/*background-image: radial-gradient(circle farthest-corner at center bottom, #005075 0%, #002638 10%, #171717 100%);*/
+}
+
+/*--- Styles for the links in the navbar---*/
+
+.navbar .nav > li > a {
+	padding: 0px;
+	text-align: center;
+	color: lightgray;
+	text-shadow: 0px 1px 0px #000;
+	text-decoration: none;
+	display: block;
+	line-height: 120px;
+	height: 100%;
+	/*border-radius: 5px;*/
+}
+
+.navbar > a:link {
+	text-decoration: none;
+	color: white;
+}
+.navbar > a:visited {
+	text-decoration: none;
+	color: white;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar .nav > .active >a:hover, .navbar .nav > .active > a:focus {
+	color: white;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 1px 0 #000;
+	background-image: linear-gradient(to top, #005075 0%, #121B1F 75%, #121B1F 100%);
+	background-image: -webkit-linear-gradient(bottom, #005075 0%, #121B1F 75%, #121B1F 100%);
+	background-image: -moz-linear-gradient(bottom, #005075 0%, #121B1F 75%, #121B1F 100%);
+
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*============================ Main content styles ================================*/
+
+.content {
+	/*padding-top: 120px;
+	padding-right: 5%;*/
+	padding: 120px 0px 0px 0px;
+	width: 85%;
+	margin: auto 20px auto 10%;
+/*	float:right;*/
+}
+
+.content h1 {
+	font-size: 2.5em;
+}
+
+.posting {
+	height: 100%;
+	/*border-top: 1px solid #ccc;
+	box-shadow: 0px -6px 3px -3px #ddd;*/
+}
+
+article {
+}
+
+.posting article h2 { /*This is the style of the post subject*/
+	margin: 20px 0px 20px 0px;
+	padding: 10px 0px 0px 0px;
+	width: 70%;
+	display: inline-block;
+	border-top: 1px solid #005075;
+	box-shadow: 0px -3px 3px -3px #006EA1, 0px -3px 6px -3px #ddd;
+}
+
+article div.blogdate {
+	font-size: 0.75em;
+	font-style: italic;
+	display: inline-block;
+	text-align: right;
+	padding-top: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+.article-content {
+	width: 75%;
+	display: inline-block;
+	height: 100%;
+	/*background-color: #fff;*/
+/*	background-image: linear-gradient(to bottom, #fff 0%, #ccc 5%);
+	background-image: -webkit-linear-gradient(top, #ccc 0%, #fff 5%);
+	background-image: -moz-linear-gradient(top, #ccc 0%, #fff 5%);*/
+}
+
+.posting article h4 {
+	margin-bottom: 15px;
+}
+
+.posting article p {
+	margin: 0px 0px 15px 0px;
+	font-size: 15px;
+	line-height: 1.3em;
+}
+
+.comments {
+	width: 75%;
+	display: block;
+	height: 100%;
+	padding: 10px 0px 0px 0px;
+	border-top: 1px dotted #ccc;
+	/*border-bottom: 1px dotted #ccc;*/
+	box-shadow: 0px -3px 3px -3px #ddd;
+}
+
+.comments h4 {
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	/*font-size: .8em;*/
+	margin: 0px 0px 10px 0px;
+}
+
+.comments p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.article-social {
+	width: 20%;
+	display: inline-block;
+	height: 250px; /*Modify height to take 100% of the parent to adjust it to a decent size.*/
+	float: right;
+	margin: 15px 0px 0px 15px;
+	border-left: 1px solid #ccc;
+	box-shadow: -3px 0px 3px -3px #ddd;
+}
+
+.posting .article-social h3 {
+	font-size: 1.1em;
+	padding: 5px 0px 0px 10px;
+	margin: 0;
+	color: gray;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	box-shadow: 0px 3px 3px -3px #ddd;
+}
+
+.twitter-widget {}
+
+.twitter-timeline { height: 250px;}
+
+/*================================ Bottom styles ==================================*/
+.bottom-bar {
+	height: 80px;
+	box-shadow: 0px -1px 3px #555, 0px -3px 3px #aaa;
+	margin-top: 20px;
+	background-image: linear-gradient(to top, #171717 0%, #00283B 100%);
+	background: -webkit-linear-gradient(bottom,#171717 0%,#00283B 100%);
+	background: -moz-linear-gradient(bottom,#171717 0%,#00283B 100%);
+	width: 100%
+}
+
+.breadcrumb {
+	width: 64%;
+	height: 100%;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	border: 0;
+	/*position: relative;*/
+}
+
+ul.breadcrumb {
+	height: 20px;
+	list-style-type: none;
+	width: 100%;
+	padding-top: 15px;/*  This pushes the element down from its own parent (or container) */
+	line-height: 20px;
+	font-size: 0.85em;
+}
+
+#bread-list-container {
+	margin: auto;
+	height: 100%;
+	width: 350px;
+}
+
+.breadcrumb > #bread-list-container > li {
+	float: left;
+	height: 100%;
+}
+
+.breadcrumb > #bread-list-container > li > a {
+	height: 20px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+}
+
+.breadcrumb-left-edge { margin-left: 0%; /*Only put the left edge margin here, this is just one element*/}
+
+.breadcrumb-right-edge { margin-right: 0%;/*Only put the left edge margin here, this is just one element*/}
+
+.divider {
+	float: left;
+	height: 20px;
+	width: 5%;
+	margin: 0px 5px 0px 5px;
+	line-height: auto;
+	color: #006EA1;
+	text-shadow: 0px 0px 5px #006EA1;
+}
+
+.copyright {
+	font-size: .65em;
+	color: gray;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*------ Anchor styles in the bottom bar-------*/
+
+.bottom-bar a:link {
+	text-decoration: none;
+	color: lightgray;
+}
+.bottom-bar a:visited {
+	text-decoration: none;
+	color: lightgray;
+}
+.bottom-bar a:hover {
+	text-decoration: none;
+	color: lightgray;
+}
+#bread-list-container .active {
+	text-decoration: none;
+	color: #005075;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

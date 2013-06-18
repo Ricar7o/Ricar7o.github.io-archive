@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 	body {
 		width: 120px;
 	}
@@ -264,7 +264,7 @@ article div.blogdate {
 .article-social {
 	width: 20%;
 	display: inline-block;
-	height: 250px; /*Modify height to take 100% of the parent to adjust it to a decent size.*/
+	height: 100px; /*Modify height to take 100% of the parent to adjust it to a decent size.*/
 	float: right;
 	margin: 15px 0px 0px 15px;
 	border-left: 1px solid #ccc;

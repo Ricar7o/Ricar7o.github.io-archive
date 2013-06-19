@@ -250,8 +250,9 @@ article div.blogdate {
 
 .posting article p {
 	margin: 0px 0px 15px 0px;
-	font-size: 15px;
-	line-height: 1.3em;
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0px 5px 0px 5px;
 }
 
 .comments {
@@ -276,11 +277,12 @@ article div.blogdate {
 	margin: 0px 0px 10px 0px;
 	padding-bottom: 10px;
 	border-bottom: 1px dotted #ccc;
+	line-height: 1.2em;
 }
 
 .article-social {
 	width: 20%;
-	display: inline-block;
+	/*display: inline-block;*/
 	height: 100px; /*Modify height to take 100% of the parent to adjust it to a decent size.*/
 	float: right;
 	margin: 15px 0px 0px 15px;

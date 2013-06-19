@@ -17,8 +17,8 @@
 }
 
 body {
-	/*background-color: lightgray;*/
-	background-image: linear-gradient(to bottom, #FFFFFF 0%, #EFF4F9 100%);
+	background-color: #F5F8FC;
+	/*background-image: linear-gradient(to bottom, #FFFFFF 0%, #EFF4F9 150%);*/
 	margin: 0;
 	padding: 0;
 /*	position: absolute;
@@ -204,8 +204,8 @@ article {
 	padding: 10px 0px 0px 0px;
 	width: 70%;
 	display: inline-block;
-	border-top: 1px solid #005075;
-	box-shadow: 0px -3px 3px -3px #006EA1, 0px -3px 6px -3px #ddd;
+	/*border-top: 1px solid #005075;
+	box-shadow: 0px -3px 3px -3px #006EA1, 0px -3px 6px -3px #ddd;*/
 }
 
 article div.blogdate {
@@ -222,7 +222,23 @@ article div.blogdate {
 	width: 75%;
 	display: inline-block;
 	height: 100%;
-	/*background-color: #fff;*/
+	/*border-top: 1px solid #005075;*/
+	/*border: 1px solid #ddd;*/
+/*	box-shadow: -3px -3px 3px -3px #bbb, -3px -3px 6px -3px #ddd,
+				3px -3px 3px -3px #bbb, 3px -3px 6px -3px #ddd;*/
+	
+/*	This is the gray shadow that's supposed to be on the top, left and right only...				
+	box-shadow: -3px 0px 3px -0px #bbb, -3px 0px 6px -0px #ddd,
+				3px 0px 3px -0px #bbb, 3px 0px 6px -0px #ddd,
+				0px -3px 3px -18px #bbb, 0px -3px 6px -24px #ddd;*/
+
+	box-shadow: 0px -3px 3px 0px #ddd, 0px -3px 3px 0px #fff,
+				0px 3px 3px 0px #ddd, 0px 3px 3px 0px #fff,
+				3px 0px 3px 0px #ddd, 3px 0px 3px 0px #fff,
+				-3px 0px 3px 0px #ddd, -3px 0px 3px 0px #fff;
+
+	padding: 0px 10px 0px 10px;
+	background-color: #fff;
 /*	background-image: linear-gradient(to bottom, #fff 0%, #ccc 5%);
 	background-image: -webkit-linear-gradient(top, #ccc 0%, #fff 5%);
 	background-image: -moz-linear-gradient(top, #ccc 0%, #fff 5%);*/
@@ -242,10 +258,10 @@ article div.blogdate {
 	width: 75%;
 	display: block;
 	height: 100%;
-	padding: 10px 0px 0px 0px;
-	border-top: 1px dotted #ccc;
+	padding: 10px 10px 0px 10px;
+	margin-bottom: 35px;
 	/*border-bottom: 1px dotted #ccc;*/
-	box-shadow: 0px -3px 3px -3px #ddd;
+	/*box-shadow: 0px -3px 3px -3px #ddd;*/
 }
 
 .comments h4 {
@@ -258,6 +274,7 @@ article div.blogdate {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: .8em;
 	margin: 0px 0px 10px 0px;
+	padding-bottom: 10px;
 	border-bottom: 1px dotted #ccc;
 }
 
@@ -333,7 +350,7 @@ ul.breadcrumb {
 	text-decoration: none;
 }
 
-.breadcrumb-left-edge { margin-left: 0%; /*Only put the left edge margin here, this is just one element*/}
+.breadcrumb-left-edge { margin-left: 10%; /*Only put the left edge margin here, this is just one element*/}
 
 .breadcrumb-right-edge { margin-right: 0%;/*Only put the left edge margin here, this is just one element*/}
 

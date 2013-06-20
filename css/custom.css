@@ -282,6 +282,7 @@ article div.blogdate {
 	display: inline-block;
 	float: left;
 	margin-right: 10px;
+	box-shadow: -1px -1px 3px #ddd; 
 }
 
 .comment .username {
@@ -291,6 +292,7 @@ article div.blogdate {
 	line-height: 30px;
 	font-size: 1em;
 	color: #01ACEE;
+	text-shadow: 1px 1px 1px #ddd;
 	vertical-align: top;
 }
 

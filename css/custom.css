@@ -277,9 +277,11 @@ article div.blogdate {
 
 .comment .avatar {
 	border: 1px solid black;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	display: inline-block;
+	float: left;
+	margin-right: 10px;
 }
 
 .comment .username {
@@ -288,6 +290,7 @@ article div.blogdate {
 	display: inline-block;
 	line-height: 30px;
 	font-size: 1em;
+	color: #01ACEE;
 	vertical-align: top;
 }
 

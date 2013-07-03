@@ -249,9 +249,9 @@ article {
 }
 
 .posting article p {
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 1.75em 0px;
 	font-size: 14px;
-	line-height: 1.4em;
+	line-height: 1.75em;
 	padding: 0px 5px 0px 5px;
 }
 
@@ -306,11 +306,11 @@ article {
 
 .comments p {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: .8em;
+	font-size: .85em;
 	margin: 0px 0px 10px 0px;
 	padding-bottom: 10px;
 	border-bottom: 1px dotted #ccc;
-	line-height: 1.3em;
+	line-height: 1.7em;
 }
 
 .comment {
